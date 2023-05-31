@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+
+}
+
+body {
+    margin: 0;
+    font-family: poppins;
+    font-weight: 300;
+
+}
+
+nav {
+    padding: 15px 50px;
+    max-height: 80px;
+   
+    
+}
+
+nav .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 10%;
+   
+    
+}
+
+nav .navigation .navigation-menu{
+    min-width: 61.350px;
+}
+
+nav .navigation .navigation-menu button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 20px;
+    border: none;
+    background: none;
+}
+
+nav .navigation .navigation-menu button p{
+    font-size: 1.5vw;
+}
+
+nav .navigation .navigation-menu button img{
+    width: 1.5vw;
+
+}
+
+nav .navigation .navigation-logo img{
+    width: 100%;
+}
+
+.nav-menu {
+    transform: translateY(-1500px);
+    position: absolute;
+    height:auto;
+    padding: 50px;
+    display: flex;
+
+}
+
+.nav-menu .nav-isi{
+
+width: 100%;
+display: flex;
+gap: 24%;
+}
+
+.find-us{
+display: flex;
+flex-direction: column;
+}
+
+.find-us li a img{
+    width: 4vw;
+    
+}
+
+.find-us .list-findus{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.find-us li{
+    margin-bottom: 10px;
+}
+
+.find-us .list-findus p{
+    margin: 0px;
+    
+    
+}
+
+.find-us .list-findus p a{
+color: white;
+text-decoration: none;
+transition: transform 0.5s ease-out;
+display: inline-block;
+}
+
+.find-us .list-findus p a:hover{
+transform: translateX(5px);
+
+}
+
+
+
+.nav-menu .nav-isi .isi-kiri{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu .nav-isi .isi-kiri p{
+    color: white;
+    font-size: 4vw;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+
+.nav-menu .nav-isi .isi-kiri p:nth-child(2){
+    color: white;
+    font-size: 1.8vw;
+    margin-top: 0px;
+    font-weight: 300;
+}
+
+.nav-menu .nav-isi .isi-kiri> div ul {
+    padding-left: 14px;
+}
+
+.nav-menu .nav-isi .isi-kiri> div ul li{
+    color: white;
+    font-size: 1.5vw;
+}
+
+.nav-menu .nav-isi .isi-kanan{
+    width: 100%;
+}
+
+.nav-menu .nav-isi .isi-kanan ul{
+   
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-menu .nav-isi .isi-kanan ul li{
+    list-style: none;
+    
+}
+
+.nav-menu .nav-isi .isi-kanan ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 4vw;
+    display: flex;
+    transition: transform 0.5s ease-out;
+    font-weight: 400;
+}
+
+.find-us li a {
+    
+    flex-direction: row;
+}
+
+.nav-menu .nav-isi .isi-kanan ul li a:hover{
+    color: white;
+    transform: translateX(5px);
+    
+}
+
+.nav-menu .nav-isi .isi-kanan ul li:nth-child(3) a:hover{
+    color: yellow;
+    
+    
+}
+
+.green {
+    display: flex;
+    height: 400px;
+    background: greenyellow;
+}
+
+.blue {
+    display: flex;
+    height: 600px;
+    background: purple;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+@media screen and (max-width: 800px){
+    .nav-menu .nav-isi{
+
+        gap: 22%;
+        }
+
+    nav .navigation .navigation-menu button p{
+        font-size: 4vw;
+    }
+    
+    nav .navigation .navigation-menu button img{
+        width: 4vw;
+    
+    }
+
+    .find-us li a img{
+        width: 5vw;
+        
+    }
+    
+    .nav-menu .nav-isi .isi-kiri p{
+        color: white;
+        font-size: 5vw;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+
+    .nav-menu .nav-isi .isi-kiri p:nth-child(2){
+        color: white;
+        width: 200%;
+        font-size: 2vw;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        display: flex;
+        
+    }
+
+    .nav-menu .nav-isi .isi-kiri> div ul{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .nav-menu .nav-isi .isi-kiri> div ul li{
+        color: white;
+        font-size: 2vw;
+        width: auto;
+    }
+    
+    .nav-menu .nav-isi .isi-kanan ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 5vw;
+        
+    }
+
+
+}

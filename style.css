@@ -2,20 +2,20 @@
 
 
 * {
-
+  /*  border: 1px red dotted; */
 }
 
 body {
     margin: 0;
     font-family: poppins;
     font-weight: 300;
-
+    background-color: purple;
 }
 
 nav {
     padding: 15px 50px;
     max-height: 80px;
-   
+   background: white;
     
 }
 
@@ -193,9 +193,150 @@ transform: translateX(5px);
 }
 
 .blue {
-    display: flex;
-    height: 600px;
+    
+    
     background: purple;
+    padding: 0px 50px;
+    
+}
+
+
+.blue> div{
+    display: flex;
+    width: 100%;
+    height: 680px;
+    
+}
+
+.blue .sect1-kiri {
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.blue .sect1-kiri div {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.blue .sect1-kiri p{
+    margin: 0px;
+    margin: 20px 0px;
+    font-size: 1vw;
+}
+
+.blue .sect1-kiri h1{
+    margin: 0px;
+    
+    font-size: 3.4vw;
+    
+}
+
+.blue .sect1-kiri div{
+    align-items: center;
+    gap: 20px;
+}
+
+.blue .sect1-kiri div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    color: white;
+    border: 2px solid #e6822b;
+    background: #e6822b;
+    transition-duration: .5s;
+    padding: 12px 40px;
+    
+}
+
+.blue .sect1-kiri div button:hover{
+    transform: scaleX(5px);
+    background: purple;
+    border: 2px solid #e6822b;
+    color: white;
+    
+}
+
+.blue .sect1-kiri div a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1vw;
+    margin: 10px 0px;
+    transition-duration: .5s;
+}
+
+.blue .sect1-kiri div a:hover{
+    color: #e6822b;
+}
+
+.blue .sect1-tengah {
+    width: 40%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue .sect1-tengah div{
+    height: 80%;
+    width: 80%;
+    
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    
+}
+
+
+.blue .sect1-tengah div img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.blue .sect1-tengah div img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    animation: melayang 4s infinite;
+}
+
+
+
+.blue .sect1-kanan {
+    width: 20%;
+    background-color: purple;
+   /* background: pink; */
+}
+
+
+
+
+
+
+@keyframes melayang{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 
@@ -245,7 +386,7 @@ transform: translateX(5px);
 
     .nav-menu .nav-isi .isi-kiri> div ul{
         margin: 0px;
-        width: 100%;
+        width: 200%;
     }
 
     .nav-menu .nav-isi .isi-kiri> div ul li{
@@ -261,5 +402,56 @@ transform: translateX(5px);
         
     }
 
+   
+    
+    .blue div{
+        flex-direction: column;
+        
+    }
+    
 
+    .blue .sect1-kiri {
+    
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        order: 2;
+    }
+
+    .blue .sect1-kiri div{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        gap: 0px;
+    }
+
+    .blue .sect1-kiri div button{
+        padding: 4px 20px;
+        font-size: 2vw;
+
+    }
+
+    .blue .sect1-kiri p{
+        font-size: 2vw;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .blue .sect1-kiri h1{
+        font-size: 5vw;
+        
+    }
+    
+    .blue .sect1-tengah {
+        width: 100%;
+        height: 68vh;
+        order: 1;
+    }
+    
+    .blue .sect1-kanan {
+        width: 100%;
+        height: 20%;
+        order: 3;
+    }
 }

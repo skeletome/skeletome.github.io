@@ -74,6 +74,7 @@ navMenu.addEventListener ('click', function() {
       };
     };
     setTimeout(putih, 100);
+    document.body.style.backgroundColor ='purple';
     
     
 

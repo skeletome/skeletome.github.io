@@ -444,7 +444,7 @@ transform: translateX(5px);
         align-items: center;
         text-align: center;
         order: 3;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
 
     .blue .sect1-kiri div{

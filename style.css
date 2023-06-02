@@ -2,7 +2,7 @@
 
 
 * {
-  /*  border: 1px red dotted; */
+    /*border: 1px red dotted; */
 }
 
 body {
@@ -317,9 +317,34 @@ transform: translateX(5px);
 .blue .sect1-kanan {
     width: 20%;
     background-color: purple;
-   /* background: pink; */
+   
 }
 
+.blue .sect1-kanan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.blue .sect1-kanan h1{
+    font-weight: 500;
+    font-size: 2vw;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.blue .sect1-kanan h1{
+    margin: 0px;
+    margin-bottom: 10px;
+
+}
+
+.blue .sect1-kanan div p{
+    margin: 0px;
+    margin-bottom: 40px;
+    font-size: 1vw;
+}
 
 
 
@@ -417,7 +442,8 @@ transform: translateX(5px);
         justify-content: center;
         align-items: center;
         text-align: center;
-        order: 2;
+        order: 3;
+        margin-top: 40px;
     }
 
     .blue .sect1-kiri div{
@@ -427,14 +453,14 @@ transform: translateX(5px);
     }
 
     .blue .sect1-kiri div button{
-        padding: 4px 20px;
+        padding: 1vw 4vw;
         font-size: 2vw;
 
     }
 
     .blue .sect1-kiri p{
         font-size: 2vw;
-        margin-top: 40px;
+        
         margin-bottom: 10px;
     }
 
@@ -446,7 +472,7 @@ transform: translateX(5px);
     .blue .sect1-tengah {
         width: 100%;
         height: auto;
-        order: 1;
+        order: 2;
     }
 
     
@@ -454,6 +480,55 @@ transform: translateX(5px);
     .blue .sect1-kanan {
         width: 100%;
         height: 20%;
-        order: 3;
+        order: 1;
+    }
+
+    .blue .sect1-kanan {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .blue .sect1-kanan h1{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .blue .sect1-kanan h1{
+        margin: 0px;
+        margin-bottom: 4px;
+        font-size: 3vw;
+    }
+    
+    .blue .sect1-kanan div{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
+
+    .blue .sect1-kanan div p{
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 1vw;
+        font-size: 2vw;
+    }
+
+    .blue .sect1-kanan div .alpa-kiri{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .blue .sect1-kanan div .alpa-kanan{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
     }
 }

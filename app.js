@@ -8,7 +8,8 @@ const findUs = document.querySelector('.find-us li a');
 const listfindUs = document.querySelector('.find-us .list-findus');
 const downList = document.querySelector('.isi-kanan .find-us > li > a >img');
 const nav = document.querySelector('nav');
-const div = document.querySelectorAll('div');
+const blue = document.querySelector('.blue');
+const footer = document.querySelector('.footer');
 
 findUs.addEventListener('click', function() {
   if(listfindUs.style.display == 'none' || !listfindUs.style.display){
@@ -47,9 +48,9 @@ navMenu.addEventListener ('click', function() {
     
     navmenuIsi.style.transform ='translateY(0px)';
     navmenuIsi.style.transition = 'transform .5s ease'
-    for(i=10; i< div.length;i++){
-      div[i].style.display = 'none';
-    };
+    
+    blue.style.display = 'none';
+    footer.style.display = 'none';
     
    } 
    else {
@@ -69,9 +70,8 @@ navMenu.addEventListener ('click', function() {
       
       tomboliconMenu.style.animation ='none';
       
-      for(i=10; i< div.length;i++){
-        div[i].style.display = 'flex';
-      };
+    blue.style.display = 'flex';
+    footer.style.display = 'flex';
     };
     setTimeout(putih, 100);
     document.body.style.backgroundColor ='purple';

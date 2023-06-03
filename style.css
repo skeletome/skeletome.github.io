@@ -355,7 +355,7 @@ transform: translateX(5px);
     justify-content: center;
     align-items: center;
     padding:  0px 50px;
-    margin-top: 20px;
+    margin-top: 400px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -528,10 +528,64 @@ transform: translateX(5px);
     padding: 1vw 2vw;
 }
 
+/* Section buy */
 
+.section-buy{
+    display: flex;
+    
+    height: 680px;
+    background: rgb(95, 0, 95);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 80px;
+}
 
+.section-buy h1{
+    font-weight: 300;
+    font-size: 3vw;
+    width: 60%;
+}
 
+.section-buy p{
+    width: 52%;
+    font-size: 1.6vw;
+}
 
+.section-buy .section-buy-beli{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    color: white;
+    border: 2px solid #e6822b;
+    background: #e6822b;
+    transition-duration: .5s;
+    padding: 1vw 4vw;
+    text-decoration: none;
+}
+
+.section-buy .section-buy-beli:hover{
+    transform: scaleX(5px);
+    background: purple;
+    border: 2px solid #e6822b;
+    color: white;
+}
+
+.section-buy  .section-buy-cara{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1vw;
+    margin: 20px 0px;
+    transition-duration: .5s;
+}
+
+.section-buy  .section-buy-cara:hover{
+    color: #e6822b;
+}   
 
 
 @keyframes melayang{
@@ -628,7 +682,7 @@ transform: translateX(5px);
         justify-content: center;
         align-items: center;
         text-align: center;
-        order: 3;
+        order: 2;
         /*margin-top: 20px;*/
     }
 
@@ -671,7 +725,7 @@ transform: translateX(5px);
     .blue .sect1-kanan {
         width: 100%;
         height: 20%;
-        order: 2;
+        order: 3;
     }
 
     .blue .sect1-kanan {
@@ -681,10 +735,11 @@ transform: translateX(5px);
         color: white;
         text-align: center;
         margin-top: 40px;
+        margin-bottom: 30px;
     }
     
     .blue .sect1-kanan h1{
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2vw;
         margin: 0px;
         margin-bottom: 10px;
@@ -828,4 +883,28 @@ transform: translateX(5px);
         font-size: 2vw;
         padding: 1vw 3vw;
     }
+
+    /* Section buy */
+
+
+
+.section-buy h1{
+   width: 140%;
+   font-size: 4.8vw;
+}
+
+.section-buy p{
+    width: 140%;
+    font-size: 2.8vw;
+}
+
+.section-buy .section-buy-beli{ 
+    margin-top: 20px;
+}
+
+.section-buy  .section-buy-cara{
+    font-size: 2.4vw;
+}
+
+
 }

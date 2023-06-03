@@ -36,14 +36,18 @@ navMenu.addEventListener ('click', function() {
       
       gambarMenu.src = 'images/logoputih.svg';
       iconMenu.src = 'images/menuputih.svg';
-      tomboliconMenu.style.animation ='fadeIn .8s ease-in-out';
+      
       tulisanMenu.style.color = 'white';
       tulisanMenu.innerHTML = 'Close';
       navmenuIsi.style.position ='static';
-      
+      tomboliconMenu.style.animation ='fadeIn .8s ease-in-out';
     };
     setTimeout(hitam, 100);
 
+    function animasiOut () {
+      tomboliconMenu.style.animation ='';
+    }
+    setTimeout(animasiOut, 801)
     
     
     navmenuIsi.style.transform ='translateY(0px)';
@@ -55,25 +59,28 @@ navMenu.addEventListener ('click', function() {
    } 
    else {
     navmenuIsi.style.transform ='translateY(-1500px)';
-    
+    nav.style.background = 'white';
     
     
     
     function putih () {
       navmenuIsi.style.position ='absolute';
-      nav.style.background = 'white';
       tulisanMenu.style.color = 'black';
-      nav.style.background = 'white';
+
       tulisanMenu.innerHTML = 'Menu';
       gambarMenu.src = 'images/logo.svg'
       iconMenu.src = 'images/menu.svg'
-      
-      tomboliconMenu.style.animation ='none';
-      
-    blue.style.display = 'flex';
-    footer.style.display = 'flex';
+      blue.style.display = 'flex';
+      footer.style.display = 'flex';
+
+      tomboliconMenu.style.animation ='fadeIn .8s ease-in-out';
     };
     setTimeout(putih, 100);
+
+    function animasiOut () {
+      tomboliconMenu.style.animation ='';
+    }
+    setTimeout(animasiOut, 801)
     document.body.style.backgroundColor ='purple';
     
     

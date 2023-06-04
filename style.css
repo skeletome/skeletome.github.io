@@ -1007,6 +1007,7 @@ transform: translateX(5px);
 
 .alpavit .alpavit-wrapper .wrapper-tengah{
     width: 100%;
+    min-height: 24vh;
     padding: 0px;
     margin-top: 20px;
     justify-content: center;

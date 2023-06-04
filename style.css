@@ -355,7 +355,7 @@ transform: translateX(5px);
     justify-content: center;
     align-items: center;
     padding:  0px 50px;
-    margin-top: 400px;
+    
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -533,8 +533,9 @@ transform: translateX(5px);
 .section-buy{
     display: flex;
     
-    height: 680px;
-    background: rgb(95, 0, 95);
+    height: 740px;
+    background: rgb(128,0,128);
+    background: linear-gradient(180deg, rgba(128,0,128,1) 50%, rgba(95,0,95,1) 100%);
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -587,6 +588,75 @@ transform: translateX(5px);
     color: #e6822b;
 }   
 
+.alpavit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    
+    padding: 0px 40px;
+}
+
+.alpavit .alpavit-wrapper {
+    display: flex;
+    width: 80%;
+    height: 60%;
+    border-radius: 40px;
+    color: white;
+    background: rgb(223,113,18);
+    background: linear-gradient(90deg, rgba(223,113,18,1) 50%, rgba(230,130,43,1) 100%);
+}
+
+.alpavit .alpavit-wrapper .wrapper-kiri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background: rgb(95, 0, 95);
+    border-radius: 40px 0px 0px 40px;
+}
+
+.alpavit .alpavit-wrapper .wrapper-kiri img{
+    width: 24vw;
+    height: 100%;
+}
+
+.alpavit .alpavit-wrapper .wrapper-tengah{
+    display: flex;
+    justify-content: center;
+    padding: 0% 2vw;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    
+    
+}
+
+.alpavit .alpavit-wrapper .wrapper-tengah h1{
+    font-size: 2vw;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.alpavit .alpavit-wrapper .wrapper-tengah p{
+    font-size: 1vw;
+    margin: 0px;
+    font-weight: 300;
+}
+
+.alpavit .alpavit-wrapper .wrapper-kanan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    
+}
+
+.alpavit .alpavit-wrapper .wrapper-kanan img{
+    transform: rotate(270deg);
+}
 
 @keyframes melayang{
     0%{
@@ -885,26 +955,78 @@ transform: translateX(5px);
     }
 
     /* Section buy */
+    
+    .section-buy{
+        height: 80vh;
+    }
 
-
-
-.section-buy h1{
+    .section-buy h1{
    width: 140%;
-   font-size: 4.8vw;
-}
+   font-size: 4vw;
+   width: 70vw;
+    }
 
-.section-buy p{
+    .section-buy p{
     width: 140%;
     font-size: 2.8vw;
-}
+    width: 70vw;
+    }
 
-.section-buy .section-buy-beli{ 
+    .section-buy .section-buy-beli{ 
     margin-top: 20px;
-}
+    }
 
-.section-buy  .section-buy-cara{
+    .section-buy  .section-buy-cara{
     font-size: 2.4vw;
+    }
+
+    
+
+    .alpavit .alpavit-wrapper{
+        flex-direction: column;
+        height: auto;
+        background: rgb(223,113,18);
+        background: linear-gradient(180deg, rgba(223,113,18,1) 50%, rgba(230,130,43,1) 100%);
+    }    
+    
+.alpavit .alpavit-wrapper .wrapper-kiri{
+    width: 100%;
+    border-radius: 40px 40px 40px 40px;
 }
 
+.alpavit .alpavit-wrapper .wrapper-kiri img{
+    width: 40vw;
+    height: 100%;
+    padding: 10vw 0px;
+}
 
+.alpavit .alpavit-wrapper .wrapper-tengah{
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.alpavit .alpavit-wrapper .wrapper-tengah h1{
+    font-size: 4vw;
+}
+
+.alpavit .alpavit-wrapper .wrapper-tengah p{
+    margin-top: 10px;
+    
+    width: 90%;
+    font-size: 2vw;
+}
+
+.alpavit .alpavit-wrapper .wrapper-kanan{
+    width: 100%;
+    
+}
+
+.alpavit .alpavit-wrapper .wrapper-kanan img{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+}
 }

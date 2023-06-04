@@ -654,6 +654,11 @@ transform: translateX(5px);
     
 }
 
+.alpavit .alpavit-wrapper .wrapper-kanan button{
+    background: none;
+    border: none;
+}
+
 .alpavit .alpavit-wrapper .wrapper-kanan img{
     transform: rotate(270deg);
 }
@@ -1025,7 +1030,7 @@ transform: translateX(5px);
     
 }
 
-.alpavit .alpavit-wrapper .wrapper-kanan img{
+.alpavit .alpavit-wrapper .wrapper-kanan button{
     margin-top: 20px ;
     margin-bottom: 20px ;
 }

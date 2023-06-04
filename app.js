@@ -10,6 +10,8 @@ const downList = document.querySelector('.isi-kanan .find-us > li > a >img');
 const nav = document.querySelector('nav');
 const blue = document.querySelector('.blue');
 const footer = document.querySelector('.footer');
+const vitamin = document.querySelector('.alpavit');
+const buy = document.querySelector('.section-buy');
 const gambarKandungan = document.querySelector('.alpavit .alpavit-wrapper .wrapper-kiri img');
 const h1Kandungan = document.querySelector('.alpavit .alpavit-wrapper .wrapper-tengah h1');
 const pKandungan = document.querySelector('.alpavit .alpavit-wrapper .wrapper-tengah p')
@@ -59,6 +61,8 @@ navMenu.addEventListener ('click', function() {
     
     blue.style.display = 'none';
     footer.style.display = 'none';
+    vitamin.style.display = 'none';
+    buy.style.display = 'none';
     
    } 
    else {
@@ -76,6 +80,8 @@ navMenu.addEventListener ('click', function() {
       iconMenu.src = 'images/menu.svg'
       blue.style.display = 'flex';
       footer.style.display = 'flex';
+      vitamin.style.display = 'flex';
+      buy.style.display = 'flex';
 
       tomboliconMenu.style.animation ='fadeIn .8s ease-in-out';
     };

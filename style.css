@@ -399,6 +399,8 @@ transform: translateX(5px);
     display: flex;
     flex-direction: row;
     width: 30%;
+    min-height: 4vh;
+    max-height: 4vh;
 }
 
 .footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri{
@@ -438,7 +440,30 @@ transform: translateX(5px);
     font-size: 1vw;
     font-weight: 300;
 }
+
+.footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri ul li button{
+    font-family: poppins;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri ul li button img{
+    width: 1.5vw;
+}   
+
+.footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri ul div{
  
+    display: none;
+    
+}
 /* kanan */
 
 
@@ -663,6 +688,172 @@ transform: translateX(5px);
     transform: rotate(270deg);
 }
 
+/* contact us */
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    background: purple;
+}
+
+.contact-wrapper {
+    width: 90%;
+    height: 90%;
+    
+    display: flex;
+}
+
+.contact-us .contact-wrapper .contact-kiri{
+    height: 100%;
+    width: 30%;
+    color: white;
+    padding: 4vw 4vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-us .contact-wrapper .contact-kiri p{
+    font-family: poppins;
+    font-weight: 300;
+    font-size: 1vw;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.contact-us .contact-wrapper .contact-kiri h1{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.contact-us .contact-wrapper .contact-kiri h1:nth-child(1){
+    font-size: 2vw;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.contact-us .contact-wrapper .contact-kanan{
+    height: auto;
+    width: 70%;
+    background: white;
+    border-radius: 40px;
+    padding: 4vw 4vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-us .contact-wrapper .contact-kanan h1{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 2vw;
+    width: 60%;
+    color: #242424;
+    margin-top: 0px;
+}
+
+.contact-us .contact-wrapper .contact-kanan h1 img{
+    width: 2vw;
+}
+
+
+
+.contact-us .contact-wrapper .contact-kanan .contact-1{
+    display: flex;
+    gap: 40px;
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-1{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 50%;
+    
+    
+}
+
+
+.contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-2{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 50%;
+    
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-2{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: end;
+    margin-top: 40px;
+    gap: 40px;
+    width: 100%;
+    height: 120px;
+}
+
+.contact-input{
+    width: 100%;
+    height: 4vh;
+    border: 1px solid #A7A7A7;
+}
+
+.contact-input_2{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #A7A7A7;
+    position: relative;
+    padding-bottom: 120px; 
+}
+
+.contact-input::placeholder{
+    color: #A7A7A7;
+    font-family: poppins;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: start;
+    margin: 4px 0px 0px 4px;
+    padding: 0px;
+    
+}
+
+.contact-input_2::placeholder{
+    color: #A7A7A7;
+    font-family: poppins;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: start;
+    margin: 4px 0px 0px 4px;
+    padding: 0px;
+    
+}
+
+
+
+.contact-us .contact-wrapper .contact-kanan .contact-2 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    padding: 10px;
+    background: #E6822B;
+    color: white;
+    font-family: poppins;
+    font-weight: 400;
+    border: none;
+}
+
+
+
+/* track order */
+
 @keyframes melayang{
     0%{
         transform: translateY(0px);
@@ -885,7 +1076,9 @@ transform: translateX(5px);
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
+        min-height: 19vh;
+        
     }
 
     .footer .footer-wrap .peranakan-footer .footer3{
@@ -926,6 +1119,14 @@ transform: translateX(5px);
     .footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri ul li a{
         font-size: 2vw;
     }
+
+    .footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri ul li button{
+        font-size: 2vw;
+    }
+    
+    .footer .footer-wrap .peranakan-footer .footer2 .footer2-kiri ul li button img{
+        width: 3vw;
+    }   
 
     .footer .footer-wrap .peranakan-footer .footer2 .footer2-kanan ul li a{
         font-size: 2vw;
@@ -1035,4 +1236,111 @@ transform: translateX(5px);
     margin-top: 20px ;
     margin-bottom: 20px ;
 }
+
+/* kontak */
+
+.contact-wrapper{
+    flex-direction: column;
 }
+
+.contact-us {
+    height: auto;
+    margin-bottom: 45px;
+}
+
+.contact-us .contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us .contact-wrapper .contact-kiri h1:nth-child(1) {
+    font-size: 5vw;
+    margin-bottom: 40px;
+}
+
+.contact-us .contact-wrapper .contact-kiri p {
+    margin-bottom: 0px;
+}
+
+.contact-us .contact-wrapper .contact-kiri {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-us .contact-wrapper .contact-kiri .kiri-atas h1{
+    font-size: 4vw;
+    margin: 0px;
+    width: auto;
+}
+.contact-us .contact-wrapper .contact-kiri p {
+    font-size: 4vw;
+    margin-bottom: 40px;
+}
+
+.contact-us .contact-wrapper .contact-kanan{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-us .contact-wrapper .contact-kanan h1{
+    font-size: 5vw;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-us .contact-wrapper .contact-kanan h1 img{
+    width: 5vw;
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-1{
+    flex-direction: column;
+    
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-1{
+    gap: 40px;
+    width: 100%;
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-2{
+    gap: 40px;
+    width: 100%;
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-2{
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-2 input{
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.contact-input_2::placeholder{
+    color: #A7A7A7;
+    font-family: poppins;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: start;
+    margin: none;
+    
+}
+
+.contact-us .contact-wrapper .contact-kanan .contact-2 button{
+    width: auto;
+    padding: 1vw 4vw;
+}
+
+}
+
+

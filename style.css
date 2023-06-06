@@ -798,13 +798,13 @@ transform: translateX(5px);
 .contact-input{
     width: 100%;
     height: 4vh;
-    border: 1px solid #A7A7A7;
+    border: 1px solid #e4e4e4;
 }
 
 .contact-input_2{
     width: 100%;
     height: 100%;
-    border: 1px solid #A7A7A7;
+    border: 1px solid #e4e4e4;
     position: relative;
     padding-bottom: 120px; 
 }
@@ -1286,6 +1286,8 @@ transform: translateX(5px);
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .contact-us .contact-wrapper .contact-kanan h1{
@@ -1301,7 +1303,7 @@ transform: translateX(5px);
 
 .contact-us .contact-wrapper .contact-kanan .contact-1{
     flex-direction: column;
-    
+    width: 90%;
 }
 
 .contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-1{
@@ -1317,11 +1319,14 @@ transform: translateX(5px);
 .contact-us .contact-wrapper .contact-kanan .contact-2{
     width: auto;
     margin-bottom: 20px;
+    width: 90%;
 }
 
 .contact-us .contact-wrapper .contact-kanan .contact-2 input{
     padding-bottom: 20px;
-    width: auto;
+    width: 100%;
+    padding: 0px;
+    
 }
 
 .contact-input_2::placeholder{
@@ -1337,8 +1342,12 @@ transform: translateX(5px);
 }
 
 .contact-us .contact-wrapper .contact-kanan .contact-2 button{
-    width: auto;
+    width: 100%;
     padding: 1vw 4vw;
+}
+
+.contact-input{
+    width: auto;
 }
 
 }

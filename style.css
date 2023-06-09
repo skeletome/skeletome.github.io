@@ -931,6 +931,7 @@ transform: translateX(5px);
     width: 13vw;
     height: 4vw;
     transition: .2s ease-in;
+    background: white;
 }
 
 .order .order-wrapper .order-content .order-content-atas button:hover {

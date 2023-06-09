@@ -11,6 +11,7 @@ const nav = document.querySelector('nav');
 const footer = document.querySelector('.footer');
 const tombolsosmedFooter = document.querySelector('.footer2-kiri > ul > li > button');
 const wrapsosmedFooter = document.querySelector('.footer2-kiri > ul > div')
+const kontak = document.querySelector('.contact-us');
 
 tombolsosmedFooter.addEventListener ('click', function() {
   if (wrapsosmedFooter.style.display == 'none'|| !wrapsosmedFooter.style.display) {
@@ -67,6 +68,7 @@ navMenu.addEventListener ('click', function() {
    
  
    footer.style.display = 'none';
+   kontak.style.display = 'none';
    
    
   } 
@@ -85,6 +87,7 @@ navMenu.addEventListener ('click', function() {
      iconMenu.src = 'images/menu.svg'
      
      footer.style.display = 'flex';
+     kontak.style.display = 'flex';
      
 
      tomboliconMenu.style.animation ='fadeIn .8s ease-in-out';

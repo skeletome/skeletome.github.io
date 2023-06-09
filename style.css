@@ -4,7 +4,7 @@
 * {
     /*border: 1px red dotted; */
     
-    
+
 }
 
 body {
@@ -721,6 +721,7 @@ transform: translateX(5px);
     font-size: 1vw;
     margin: 0px;
     margin-bottom: 40px;
+    
 }
 
 .contact-us .contact-wrapper .contact-kiri h1{
@@ -769,7 +770,7 @@ transform: translateX(5px);
 .contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-1{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
     width: 50%;
     
     
@@ -779,7 +780,7 @@ transform: translateX(5px);
 .contact-us .contact-wrapper .contact-kanan .contact-1 .contact-1-2{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
     width: 50%;
     
 }
@@ -788,7 +789,6 @@ transform: translateX(5px);
     display: flex;
     flex-direction: column;
     
-    align-items: end;
     margin-top: 40px;
     gap: 40px;
     width: 100%;
@@ -841,7 +841,7 @@ transform: translateX(5px);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vw;
+    width: 100%;
     padding: 10px;
     background: #E6822B;
     color: white;
@@ -853,6 +853,135 @@ transform: translateX(5px);
 
 
 /* track order */
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: purple;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.order .order-wrapper{
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 70%;
+    height: auto;
+    padding-bottom: 80px;
+    border-radius: 40px;
+}
+
+.order .order-wrapper .order-content{
+    width: 40%;
+    height: 100%;
+    
+}
+
+.order .order-wrapper .order-content .order-content-atas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+    justify-content: center;
+    
+}
+
+.order .order-wrapper .order-content .order-content-atas h3{
+    margin: 0px;
+    text-align: center;
+    color: #242424;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+}
+
+.order .order-wrapper .order-content .order-content-atas p{
+    margin: 0px;
+    color: #A7A7A7;
+    
+}
+
+.order .order-wrapper .order-content .order-content-atas .shopee-jne{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.order .order-wrapper .order-content .order-content-atas button img{
+    width: 8vw;
+    height: 4vw;
+}
+
+.order .order-wrapper .order-content .order-content-atas .shopee-jne .jne{
+    width: 6vw;
+}
+
+.order .order-wrapper .order-content .order-content-atas button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A7A7A7;
+    border-radius: 8px;
+    width: 13vw;
+    height: 4vw;
+    transition: .2s ease-in;
+}
+
+.order .order-wrapper .order-content .order-content-atas button:hover {
+    border: 1px solid #E6822B;
+}
+
+
+.order .order-wrapper .order-content .order-content-atas .jnt-sicepat{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+.order .order-wrapper .order-content .order-content-bawah{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.order .order-wrapper .order-content .order-content-bawah input{
+    height: 5vh;
+    border: 1px solid #A7A7A7;
+    font-family: poppins;
+    font-weight: 500;
+    
+}
+
+.order .order-wrapper .order-content .order-content-bawah input::placeholder{
+    color: #A7A7A7;
+    font-weight: 300;
+    font-family: poppins;
+}
+
+.order .order-wrapper .order-content .order-content-bawah button{
+    height: 5vh;
+    border: 1px solid #E6822B;
+    background: #E6822B;
+    color: white;
+    font-family: poppins;
+    font-weight: 500;
+    
+}
 
 @keyframes melayang{
     0%{
@@ -1349,6 +1478,52 @@ transform: translateX(5px);
 .contact-input{
     width: auto;
 }
+
+/* order */
+
+.order .order-wrapper{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.order .order-wrapper .order-content {
+    width: 80%;
+}
+
+.order .order-wrapper .order-content .order-content-atas h3 {
+    font-size: 5vw;
+}
+
+.order .order-wrapper .order-content .order-content-atas p {
+    font-size: 3vw;
+}
+
+.order .order-wrapper .order-content .order-content-atas p {
+    margin-bottom: 20px;
+}
+
+.order .order-wrapper .order-content .order-content-atas button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A7A7A7;
+    border-radius: 8px;
+    width: 37vw;
+    height: 16vw;
+    transition: .2s ease-in;
+}
+
+.order .order-wrapper .order-content .order-content-atas button img {
+    width: 24vw;
+    height: auto;
+}
+
+.order .order-wrapper .order-content .order-content-atas .shopee-jne .jne {
+    width: 18vw;
+    height: auto;
+}
+
+
 
 }
 

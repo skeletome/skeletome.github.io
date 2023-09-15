@@ -10,12 +10,16 @@ const makan = document.body.querySelectorAll(".makan");
 tombolNav.addEventListener("click", ()=>{
     if(navList.style.display=="none" || !navList.style.display){
 
+        
+
+        navList.style.animation="fadein .2s ease-in";
+        
+        setTimeout(()=>{
+
         for(let i = 0; i < makan.length ; i++){
             makan[i].style.display="none";
         }
 
-        navList.style.animation="fadein .2s ease-in";
-        setTimeout(()=>{
         navList.style.display="flex";
         navBar.style.animation= "fadein .2s ease-in";
         rotatingNews.style.animation= "fadein .2s ease-in";
@@ -23,11 +27,10 @@ tombolNav.addEventListener("click", ()=>{
         navBar.style.background= "black";
         tombolNav.style.color="white";
         gambarLogo.src="img/logoputih.svg";
+
         },200);
     }else{
-        for(let i = 0; i < makan.length ; i++){
-            makan[i].style.display="flex";
-        }
+        
         navList.style.animation="fadeout .2s ease-out";
         // setTimeout(()=>{
         //     navBar.style.background= "white";
@@ -41,6 +44,12 @@ tombolNav.addEventListener("click", ()=>{
         rotatingNews.style.animation= "fadeout .2s ease-out";
         
         setTimeout(()=>{
+            for(let i = 0; i < makan.length ; i++){
+                makan[i].style.display="flex";
+            }
+
+
+
             rotatingNews.style.background="#7827E6";
             navBar.style.background= "white";
             navList.style.display="none";

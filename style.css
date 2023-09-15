@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    /* border: 1px dotted red; */
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+nav .rotating-news{
+    width: 100%;
+    background: #7827E6;
+    /* background: black; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid white;
+}
+
+nav .rotating-news p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: white;
+    animation: rotating 30s linear infinite;
+}
+
+nav .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 80px;
+    
+    
+}
+
+nav .navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navigation button{
+    background: none;
+    border: none;
+    font-weight: 300;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+nav .navigation-list{
+    display: none; /* INI DI HIDE */
+    padding: 40px 40px;
+    background: black;
+    height: 90vh;
+    
+}
+
+nav .navigation-list ul{
+    display: flex;
+    flex-direction: column;
+    
+    list-style: none;
+    width: auto;
+    
+    padding: 0;
+    
+    gap: 6vh;
+}
+
+nav .navigation-list ul li a{
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+    width: auto;
+    
+}
+
+nav .navigation-list ul li{
+    transition: transform .2s ease-in;
+    width: auto;
+}
+
+nav .navigation-list ul li:hover{
+    transform: translateX(20px);
+}
+/* NAVIGATION */
+
+/* IMAGE SLIDER */
+
+.image-slider{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.image-slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* IMAGE SLIDER */
+
+
+
+.header {
+    padding: 120px 40px;
+    display: flex;
+    height: auto;
+}
+
+.header .header-kiri{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-kiri p{
+    font-size: 1vw;
+    
+}
+
+.header-kiri h1{
+    width: 90%;
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+.header-kiri button{
+    border: 1px solid black;
+    background: white;
+    font-size: 1vw;
+    width: 30%;
+    padding: 1vh 0;
+    cursor: pointer;
+    transition: background .2s ease-in, border .2s ease-in, color .2s ease-in;
+}
+
+.header-kiri button:hover{
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+.header-kanan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.header-kanan img{
+    width: 25vw;
+    
+}
+
+.header-kanan .gambar-header{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-kanan .gambar-header img:nth-child(1){
+    position: absolute;
+    width: 14vw;
+    animation: melayang 3s ease infinite;
+}
+
+.header-deskripsi{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-deskripsi h6{
+ font-size: 1vw;
+ font-weight: 500;
+}
+
+.header-deskripsi p{
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* MODAL-BOX */
+
+.modal{
+    display: none; /* INI DIHIDE */ 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, .5);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.modal-box{
+    display: flex;
+    gap: 20%;
+    flex-direction: column;
+    padding: 40px;
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
+}
+
+.modal-tombolx{
+    display: flex;
+    justify-content: end;
+}
+
+.modal-tombolx button{
+    cursor: pointer;
+    font-size: 1.4vw;
+    background: none;
+    border: none;
+}
+
+.modal-contain{
+    display: flex;
+}
+
+.modal-gambar{
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-gambar img{
+    width: 25vw;
+    height: 100%;
+}
+
+.modal-deskripsi{
+    width: 50%;
+    height: 100%;
+}
+
+.modal-deskripsi p{
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+.modal-deskripsi h4{
+    margin-top: 20px;
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: .5vw .5vw;
+}
+
+/* MODAL-BOX */
+
+/* GLOW BEYOND */
+
+.beyond-glow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: white;
+}
+
+.beyond-glow p{
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+/* GLOW BEYOND */
+
+
+/* STORY */
+
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.story-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.story-image img{
+    width: 30vw;
+    height: 100%;
+}
+
+.story-box{
+    display: flex;
+    background: #7827E6;
+    width: 80%;
+    height: 80%;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.story-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story-description p{
+    font-size: 2vw;
+    color: white;
+    font-weight: 300;
+}
+
+.story-description h4{
+    color: black;
+    background: white;
+    padding: 1vh 2vw;
+    font-weight: 400;
+}
+
+/* STORY */
+
+@keyframes melayang{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+@keyframes fadein{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeout{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+
+@keyframes rotating {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav .navigation{
+        height: 60px;
+        
+        
+    }
+    
+    nav .navigation img{
+        width: 30vw;
+    } 
+
+    nav .rotating-news p{
+        font-size: 3vw;
+    }
+
+    nav .navigation button{
+        font-size: 3vw;
+    }
+
+    nav .navigation-list ul li{
+     
+    }
+
+    nav .navigation-list ul li a{
+        font-size: 6vw;
+    }
+
+    /* IMAGE SLIDER */
+    .image-slider{
+        overflow: hidden;
+    }
+
+    .image-slider img{
+        width: 200%;
+        height: 200%;
+        transform: translateX(-30px);
+            
+            
+    }
+    /* IMAGE SLIDER */
+   
+    /* HEADER */
+    .header{
+        flex-direction: column;
+        padding: 40px 40px;
+    }
+    /* HEADER */
+    .header-kanan{
+        order: 1;
+    }
+    .header-kiri{
+        order: 2;
+    }
+    .header-deskripsi{
+        order: 3;
+    }
+
+    .header-kanan {
+        margin-top: 20px
+    }
+    
+    .header-kanan img{
+        width: 55vw;
+        
+    }
+    .header-kanan .gambar-header img:nth-child(1){
+
+        width: 40vw;
+    
+    }
+    .header-kiri{
+        text-align: center;
+        margin: 40px 0px;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-kiri p{
+        font-size: 2vw;
+        margin-bottom: 20px;
+    }
+
+    .header-kiri h1{
+        font-size: 5vw;
+        margin-bottom: 20px;
+    }
+    .header-kiri button{
+        font-size: 3vw;
+        width: auto;
+        padding: 1.5vw 2vw;
+    }
+
+    .header-deskripsi{
+        text-align: center;
+    }
+
+    .header-deskripsi h6{
+        font-size: 3vw;
+    }
+       
+    .header-deskripsi p{
+        font-size: 3vw;
+    }
+    
+    .header-deskripsi{
+        margin-bottom: 20px;
+    }
+
+
+    /* MODAL */
+   
+.modal{
+  
+}
+
+.modal-box{
+   height: auto;
+   gap: 10px;
+   padding: 40px;
+}
+
+.modal-tombolx{
+    
+}
+
+.modal-tombolx button{
+    font-size: 4vw;
+}
+
+.modal-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-gambar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-gambar img{
+    width: 45vw;
+    height: 100%;
+}
+
+.modal-deskripsi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-deskripsi p{
+    margin: 20px 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5vw;
+}
+
+.modal-deskripsi h4{
+    text-align: center;
+    width: 70%;
+    font-size: 2vw;
+}
+    /* MODAL */
+
+    /* GLOW-BEYOND*/
+
+    .beyond-glow p{
+        font-size: 4vw;
+    }
+    
+
+
+    /* GLOW-BEYONG*/
+
+    /* GLOW BEYOND */
+
+.beyond-glow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: white;
+}
+
+.beyond-glow p{
+    font-weight: 300;
+    font-size: 4vw;
+}
+
+/* GLOW BEYOND */
+
+
+/* STORY */
+
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.story-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.story-image img{
+    width: 70vw;
+    height: 100%;
+}
+
+.story-box{
+    display: flex;
+    flex-direction: column ;
+    height: auto;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.story-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story-description p{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.story-description h4{
+    color: black;
+    background: white;
+    padding: 1vh 2vw;
+    font-weight: 400;
+}
+
+/* STORY */
+}

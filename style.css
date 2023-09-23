@@ -40,7 +40,7 @@ nav .rotating-news p{
     padding: 0;
     font-weight: 300;
     color: white;
-    animation: rotating 30s linear infinite;
+    animation: rotating 20s linear infinite;
 }
 
 nav .navigation{
@@ -63,7 +63,7 @@ nav .navigation button{
     background: none;
     border: none;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 1.4vw;
     cursor: pointer;
 }
 
@@ -312,6 +312,7 @@ nav .navigation-list ul li:hover{
     align-items: center;
     width: 100%;
     height: 600px;
+    
 }
 
 .story-image{
@@ -368,44 +369,50 @@ nav .navigation-list ul li:hover{
     padding: 20px;
     background: black;
   
-    height: 200px;
+    height: auto;
 }
 
 .footer-atas{
     width: 100%;
     height: 10%;
+    margin-bottom: 20px;
 }
 
 .footer-atas p{
     color: white;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.4vw;
+    
 }
 
 .footer-tengah{
     width: 100%;
     height: 80%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-tengah ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    list-style: none;
 }
 
 .footer-tengah ul li a{
+    display: flex;
     color: white;
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 1vw;
     text-decoration: none;
-    transition: color .2s ease-in;
+    transition: transform .2s ease-in;
 }
 
 .footer-tengah ul li a:hover{
-    color: #7827E6;
+    color: white;
+    transform: translateX(10px);
 }
 
 .footer-bawah{
@@ -416,11 +423,230 @@ nav .navigation-list ul li:hover{
 .footer-bawah p{
     color: white;
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 
 /* FOOTER */
+
+/* BUNNY */
+
+.vegan-header{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vegan-header p{
+    font-weight: 300;
+    color: #878787;
+    font-size: 2vw;
+}
+
+.vegan-header img{
+    width: 6vw;
+}
+
+/* BUNNY */
+
+
+/* SHOP */
+
+.shop{
+    display: flex;
+    height: 600px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.shop-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  
+    flex-direction: column;
+}
+
+.shop-button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.shop-button p{
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.shop-button button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+.shop-content-bawah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    padding: 0 20%;
+}
+
+.shop-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 30%;
+    width: 40%;
+    height: auto;
+    background: white;
+}
+
+.shop-image{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    
+}
+
+.shop-image img{
+    width: 100%;
+
+    height: 100%;
+}
+
+.peak{
+    position: absolute;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1vw;
+    padding: .4vw 5vw;
+    color: white;
+    background: palevioletred;
+    display: none;
+    cursor: pointer;
+    transition: background .2s ease;
+    border: none;
+}
+
+.peak:hover{
+    background: purple;
+}
+
+.hide-shop{
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+}
+
+.hide-shop button{
+    background: rgb(243, 243, 243);
+    font-size: 1.4vw;
+    padding: .2vw .9vw;
+}
+
+
+
+.shop-box button:nth-child(2){
+    margin-top: 10px;
+    font-size: 1.2vw;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.shop-box button:nth-child(3){
+    font-size: 1vw;
+    border: none;
+    background-color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* SHOP */
+
+/* PRODUCT */
+
+.product{
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 40px;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+.product img{
+   width: 80%;
+   height: 100%;
+   background: rgb(0, 255, 0);
+}
+
+.product-description{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-direction: column;
+   width: 50%;
+   height: 80%;
+}
+
+.product-description h2{
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.product-description h3{
+    font-weight: 300;
+    font-size: 1.4vw;
+}
+
+.product-description p{
+    font-weight: 300;
+    font-size: 1.2vw;
+    width: 75%;
+}
+
+.product-description hr{
+    width: 86%;
+}
+
+.product-description a{
+    width: 80%;
+    padding: .6vw 1.4vw;
+    background: #7827E6;
+    font-size: 1.vwvw;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    transition: background-color .2s ease-in;
+}
+
+.product-description a:hover{
+    background-color: 	#EE4D2D;
+}
+
+/* PRODUCT */
+
+
 @keyframes melayang{
     0%{
         transform: translateY(0px);
@@ -456,14 +682,27 @@ nav .navigation-list ul li:hover{
 
 @keyframes rotating {
     0%{
-        transform: translateX(500px);
+        transform: translateX(900px);
     }
     100%{
-        transform: translateX(-500px);
+        transform: translateX(-900px);
+    }
+}
+
+@keyframes rotating-mobile {
+    0%{
+        transform: translateX(450px);
+    }
+    100%{
+        transform: translateX(-450px);
     }
 }
 
 @media screen and (max-width: 800px) {
+    nav .rotating-news p{
+        animation: rotating-mobile 20s linear infinite;
+    }
+
     nav .navigation{
         height: 60px;
         
@@ -673,6 +912,7 @@ nav .navigation-list ul li:hover{
     align-items: center;
     width: 100%;
     height: 600px;
+    
 }
 
 .story-image{
@@ -737,7 +977,7 @@ nav .navigation-list ul li:hover{
 
 .footer-atas p{
     color: white;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 3vw;
 }
 
@@ -759,7 +999,7 @@ nav .navigation-list ul li:hover{
 .footer-tengah ul li a{
     color: white;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 2.4vw;
     text-decoration: none;
 }
 
@@ -771,6 +1011,103 @@ nav .navigation-list ul li:hover{
 .footer-bawah p{
     color: white;
     font-weight: 300;
+    font-size: 2.4vw;
+}
+
+/* BUNNY */
+
+.vegan-header p{
     font-size: 3vw;
 }
+
+.vegan-header img{
+    width: 14vw;;
+}
+
+/* BUNNY */
+
+/* SHOP */
+
+.shop{
+    height: auto;
+}
+
+.shop-content-bawah{
+    padding: 0 0;
+}
+
+.shop-box{
+    width: 50%;
+}
+
+.shop-image img{
+    height: 00%;
+}
+
+.shop-box button:nth-child(1){
+    font-size: 2vw;
+}
+
+.shop-box button:nth-child(2){
+    font-size: 3vw;
+}
+
+.shop-box button:nth-child(3){
+    font-size: 2.4vw;
+}
+
+.shop-button p{
+    font-size: 4vw;
+    margin-bottom: 40px;
+}
+
+/* SHOP */
+
+/* PRODUCT */
+
+.product{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 80px 0px;
+}
+
+.product-img{
+    width: 100%;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product-description{
+    width: 100%;
+    
+}
+
+.product-description h2{
+    font-size: 4vw;
+}
+
+.product-description h3{
+    font-size: 3vw;
+}
+
+.product-description hr{
+    width: 100%;
+}
+
+.product-description p{
+    font-size: 3vw;
+    width: 100%;
+}
+
+.product-description a{
+    width: 100%;
+    padding: 1.4vh 0px;
+}
+
+
+
+/* PRODUCT */
 }

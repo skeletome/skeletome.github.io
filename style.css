@@ -369,7 +369,7 @@ nav .navigation-list ul li:hover{
     padding: 20px;
     background: black;
   
-    height: auto;
+    height: 100%;
 }
 
 .footer-atas{

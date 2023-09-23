@@ -460,7 +460,7 @@ nav .navigation-list ul li:hover{
     display: flex;
     height: 600px;
     padding: 20px;
-    margin-bottom: 40px;
+    margin: 80px 0;
 }
 
 .shop-content{

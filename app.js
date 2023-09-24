@@ -92,6 +92,13 @@ if(imageSlider){
     });
 };
 
+if(imageSlider){
+    window.addEventListener('load',()=>{
+        imageSlider.style.animation="fadein 2s ease-in";
+    })
+    
+}
+
 
 // SLIDER
 
@@ -130,9 +137,25 @@ if(tombolmodalX){
 
 let shopImage = document.body.querySelector(".shop-image");
 let shopImages = document.body.querySelector(".shop-image img");
+let shop_description = document.body.querySelectorAll(".shop-box button");
 let peak = document.body.querySelector(".peak");
 
-shopImage.addEventListener ('mouseover', () => {
+if(shopImages){
+    window.addEventListener('load',()=>{
+        shopImages.style.animation="fadein 2s ease-in";
+
+        shop_description[0].style.opacity="0%";
+        shop_description[1].style.opacity="0%";
+        setTimeout(()=>{
+            shop_description[0].style.animation="fadein 1s ease-in";
+            shop_description[0].style.opacity="100%";
+
+            shop_description[1].style.animation="fadein 1s ease-in";
+            shop_description[1].style.opacity="100%";
+        },1500);
+        
+    })
+    shopImage.addEventListener ('mouseover', () => {
         
         shopImages.src="img/shop3.jpg";
         peak.style.animation="fadein .3s ease-in";
@@ -141,15 +164,40 @@ shopImage.addEventListener ('mouseover', () => {
             peak.style.animation="";
         },400);
     
-})
+    })
+    shopImage.addEventListener ('mouseout', () => {
+        shopImages.src="img/shop1.jpg";
+        peak.style.display="none";
+    })
+}
 
-shopImage.addEventListener ('mouseout', () => {
-    shopImages.src="img/shop1.jpg";
-    peak.style.display="none";
-})
+
+
+
+
+
 
 
 // SHOP
 
+
+// PRODUCT
+let product_img = document.body.querySelector(".product-img img")
+let product_description = document.body.querySelector(".product-description")
+
+if (product_img){
+    window.addEventListener('load', ()=>{
+        product_img.style.animation="fadein 2s ease-in";
+        product_description.style.opacity="0%";
+        setTimeout(()=>{
+            product_description.style.animation="fadein 1s ease-in";
+            product_description.style.opacity="100%";
+        },1500);
+        
+    })
+}
+
+
+//PRODUCT
 
 

@@ -94,7 +94,7 @@ if(imageSlider){
 
 if(imageSlider){
     window.addEventListener('load',()=>{
-        imageSlider.style.animation="fadein 2s ease-in";
+        imageSlider.style.animation="fadein 1s ease-in";
     })
     
 }
@@ -142,7 +142,7 @@ let peak = document.body.querySelector(".peak");
 
 if(shopImages){
     window.addEventListener('load',()=>{
-        shopImages.style.animation="fadein 2s ease-in";
+        shopImages.style.animation="fadein 1s ease-in";
 
         shop_description[0].style.opacity="0%";
         shop_description[1].style.opacity="0%";
@@ -152,7 +152,7 @@ if(shopImages){
 
             shop_description[1].style.animation="fadein 1s ease-in";
             shop_description[1].style.opacity="100%";
-        },1500);
+        },200);
         
     })
     shopImage.addEventListener ('mouseover', () => {
@@ -187,12 +187,12 @@ let product_description = document.body.querySelector(".product-description")
 
 if (product_img){
     window.addEventListener('load', ()=>{
-        product_img.style.animation="fadein 2s ease-in";
+        product_img.style.animation="fadein 1s ease-in";
         product_description.style.opacity="0%";
         setTimeout(()=>{
             product_description.style.animation="fadein 1s ease-in";
             product_description.style.opacity="100%";
-        },1500);
+        },500);
         
     })
 }
